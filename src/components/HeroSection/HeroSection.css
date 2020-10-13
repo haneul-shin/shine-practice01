@@ -1,0 +1,85 @@
+@import '../../App.css';
+
+#hero-home {
+  background: url('/img/hero-home.jpg') center/cover no-repeat;
+}
+
+#hero-products {
+  background: url('/img/hero-products.jpg') center/cover no-repeat;
+}
+
+#hero-stores {
+  background: url('/img/hero-stores.jpg') center/cover no-repeat;
+}
+
+#hero-services {
+  background: url('/img/hero-services.jpg') center/cover no-repeat;
+}
+
+.hero-container {
+  height: 90vh;
+  padding: 25vh 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container > h1 {
+  font-size: 7rem;
+  opacity: 0.7;
+  text-align: center;
+  color: var(--primaryB);
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.hero-btn-link {
+  padding: 10px;
+}
+
+@media (max-width: 1024px) {
+  .hero-container > h1 {
+    font-size: 6rem;
+  }
+
+  .hero-btns{ 
+  width: 500px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .hero-container {
+    padding: 15vh 5vw;
+  }
+
+  .hero-container > h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+
+  .hero-btns{
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+  }
+}
+
+@media (max-width: 425px) and (min-width: 320px) {
+ 
+  .hero-container > h1 {
+    font-size: 4.9rem;
+    line-height: 6rem;
+  }
+
+  .hero-btns{
+    width: 320px;
+  }
+}

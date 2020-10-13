@@ -1,0 +1,45 @@
+@import '../../App.css';
+
+.ls-p {
+  color: var(--primary);
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ls-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+
+.ls-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ls-input {
+  padding: 10px 20px;
+  margin: 10px;
+  outline: none;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .ls-p {
+    font-size: 2.5rem;
+  }
+
+  .ls-input {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+}

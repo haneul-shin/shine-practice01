@@ -1,0 +1,84 @@
+@import '../../App.css';
+
+.item-header {
+  text-align: left;
+  font-size: 2.5rem;
+  color: var(--mainB);
+  padding: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+}
+
+.cards-wrapper {
+  position: relative;
+}
+
+.cards-items {
+  list-style: none;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards-item {
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.cards-item-link {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px var(--sub);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.cards-item-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 240px;
+  height: 300px;
+}
+
+.cards-item-info {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #000;
+}
+
+.cards-item-info.hidden {
+  display: none;
+}
+
+.cards-item-info:hover {
+  color: var(--subB);
+  background: var(--primaryB);
+}
+
+.cards-item-name {
+  font-size: 20px;
+}
+
+.cards-item-price {
+  color: var(--sub);
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 425px) and (min-width: 320px) {
+  .cards-item {
+    margin: 20px;
+  }
+}

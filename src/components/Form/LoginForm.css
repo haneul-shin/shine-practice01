@@ -1,0 +1,93 @@
+@import '../../App.css';
+
+.login-container {
+  margin: 5% 5%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid var(--primaryB);
+}
+
+.login-header {
+  margin-bottom: 15px;
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.check-member {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+
+.check-p {
+  color: var(--sub);
+  font-size: 2rem;
+  padding-right: 20px;
+ }
+
+.signup-link {
+  padding-top: 10px;
+  font-size: 1.2rem;
+  color: var(--subB);
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  color: var(--mainB);
+}
+
+.login-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  height: 70px;
+}
+
+.login-input-wapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 290px;
+}
+
+.login-input {
+  width: 200px;
+}
+
+.login-label {
+  color: var(--sub);
+}
+
+.login-register{
+  margin: 30px;
+  padding-left: 200px;
+}
+
+@media (max-width: 768px) {
+
+  .login-container{
+    align-items: center;
+  }
+
+  .check-member {
+    font-size: 95%;
+  }
+
+  .login-register {
+    padding: 0;
+  }
+}
+
+@media (max-width: 425px) and (min-width: 375px) {
+
+  .login-input-wapper {
+    width: 250px;
+  }
+
+  .login-input {
+    width: 150px;
+    padding-left: 10px;
+  }
+}

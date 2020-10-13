@@ -1,0 +1,102 @@
+@import '../../App.css';
+
+.signform-container {
+  margin: 5% 5%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid var(--primaryB);
+}
+
+.signform-header {
+  margin-bottom: 15px;
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.check-member {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+
+.check-p {
+  color: var(--sub);
+  font-size: 2rem;
+  padding-right: 20px;
+}
+
+.login-link {
+  padding-top: 10px;
+  font-size: 1.2rem;
+  color: var(--subB);
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: var(--mainB);
+}
+
+.signform-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  height: 200px;
+}
+
+.signform-input-wapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 290px;
+}
+
+.signform-input {
+  width: 200px;
+  padding-left: 10px;
+}
+
+.signform-label {
+  color: var(--sub);
+}
+
+#birth_mm {
+  width: 90px;
+}
+
+#birth_dd {
+  width: 90px;
+}
+
+.signform-register{
+  margin: 30px;
+  padding-left: 200px;
+}
+
+@media (max-width: 768px) {
+
+  .signform-container{
+    align-items: center;
+  }
+
+  .check-member {
+    font-size: 95%;
+  }
+
+  .signform-register {
+    padding: 0;
+  }
+}
+
+@media (max-width: 425px) and (min-width: 320px) {
+  
+  .signform-input-wapper {
+    width: 250px;
+  }
+  
+  .signform-input {
+    width: 150px;
+    padding-left: 10px;
+  }  
+}

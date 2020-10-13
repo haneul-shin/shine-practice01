@@ -1,0 +1,127 @@
+@import '../../App.css';
+
+.navbar {
+  background: var(--primaryB);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  position: sticky;
+  z-index: 999;
+}
+
+.navbar-container {
+  width: 100%;
+  padding: 0 4vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.navbar-logo {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  cursor: pointer;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.navbar-icon {
+  margin-right: 0.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.nav-links {
+  color: var(--main);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px;
+  height: 80px;
+}
+
+.nav-links:hover{
+  color: var(--mainB);
+  border-bottom: 8px solid var(--mainB);
+  transition: all 0.3s ease;
+}
+
+.nav-btn {
+  margin-left: 2vw;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .navbar-logo {
+    font-size: 2rem;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    transform: translate(-50%, 10%);
+    cursor: pointer;
+    color: var(--primary);
+    font-size: 3rem;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.8);
+    right: 0;
+    transition: all 0.6s ease;
+  }
+
+  .nav-item {
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    display: table;
+    color: var(--main);
+  }
+
+  .nav-links:hover {
+    color: var(--mainB);
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 425px) and (min-width: 375px) {
+  
+}

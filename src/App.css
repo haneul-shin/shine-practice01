@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+:root {
+  --primary: rgb(58, 20, 10);
+  --primaryB: rgb(250, 235, 230);
+
+  --main: rgb(82, 25, 25);
+  --mainB: rgb(250, 117, 100);
+
+  --sub: rgb(40, 55, 77);
+  --subB: rgb(69, 122, 148);
+}
+
+/*모니터 사이즈
+
+2560 4K
+
+1440 기준점!
+1024
+
+768 타블렛
+
+425 모바일
+375
+320*/
