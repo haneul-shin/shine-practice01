@@ -18,12 +18,13 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path='/' exact component={Home} />
+          <Route exact path='/' component={Home} />
           <Route path='/products' component={Products} />
           <Route path='/stores' component={Strores} />
           <Route path='/services' component={Services} />
           <Route path='/sign-up' component={SignUp} />
           <Route path='/log-in' component={LogIn} />
+          <Route strict path='/' render={() => <div>404 Not Found!</div>} />
         </Switch>
         <Footer />
       </Router>

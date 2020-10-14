@@ -1,0 +1,59 @@
+@import '../../App.css';
+
+.cardnav-container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+}
+
+.cardnav-wrapper {
+  position: relative;
+  width: 450px;
+  align-self: center;
+}
+
+.cardnav-header {
+  color: var(--main);
+  font-size: 2rem;
+  margin-bottom: 30px;
+  margin-left: -20px;
+}
+
+.cardnav-category {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardnav-link {
+  text-decoration: none;
+  color: var(--sub);
+  font-size: 1.5rem;
+}
+
+.cardnav-link:hover {
+  color: var(--subB);
+}
+
+@media (max-width: 768px) {
+  .cardnav-wrapper {
+    width :320px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cardnav-wrapper {
+    width: 250px;
+  }
+
+  .cardnav-header {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  .cardnav-link {
+    font-size: 1.2rem;
+  }
+}

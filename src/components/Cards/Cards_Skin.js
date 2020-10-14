@@ -4,7 +4,8 @@ import CardItem from './CardItem'
 
 function Cards_Skin() {
   return (
-    <div className="cards wrapper">
+    <div className="cards-container">
+      <div className="cards-wrapper">
           <h2 className='item-header'>Skin Care</h2>
           <ul className="cards-items">        
             <CardItem
@@ -68,6 +69,7 @@ function Cards_Skin() {
               price='$29.99'
               path='/products'/>
           </ul>
+        </div>
         </div>
   )
 }

@@ -4,7 +4,8 @@ import CardItem from './CardItem'
 
 function Cards_Face() {
   return (
-    <div className="cards wrapper">
+    <div className="cards-container">
+      <div className="cards-wrapper">
     <h2 className='item-header'>Face Makeup</h2>
     <ul className="cards-items">
       <CardItem
@@ -68,6 +69,7 @@ function Cards_Face() {
         price='$39.99'
         path='/products'/>
     </ul>
+  </div>
   </div>
   )
 }
